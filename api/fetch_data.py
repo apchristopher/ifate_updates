@@ -28,7 +28,7 @@ def fetch_data():
     download_url = f'{base_url}download'
     headers = {'Content-Type': 'application/json', 'Accept': 'application/json'}
     
-    # Fetch and parse data
+    # Fetch and parse the data
     data = fetch_and_parse_data(base_url, download_url, headers)
     
     # Convert DataFrame to CSV and stream it
