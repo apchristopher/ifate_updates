@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fetch CSV content
             const csvResponse = await fetch(downloadUrl, {
                 method: 'POST',
+                mode: 'no-cors',
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
